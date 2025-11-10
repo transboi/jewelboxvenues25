@@ -5,8 +5,18 @@
   <title>Jewel Box Revue – Venues Map</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
   <style>
-    html, body, #map { height: 100%; margin: 0; padding: 0; }
-  </style>
+  html, body, #map { height: 100%; margin: 0; padding: 0; }
+  body {
+    background-color: #f7f1e3;
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #3a2e1f;
+  }
+  .storymap-slide-text {
+    background-color: rgba(247, 241, 227, 0.92);
+    padding: 15px;
+    border-radius: 6px;
+  }
+</style>
 </head>
 <body>
   <div id="map"></div>
@@ -25,8 +35,19 @@
         "slides": [
           {
             "type": "overview",
-            "text": {
-              "headline": "Jewel Box Revue, c. 1939–1960s",
+            {
+  "type": "overview",
+  "text": {
+    "headline": "The Jewel Box Revue: A Touring Map (1939–1968)",
+    "text": "An exhibition-style reconstruction of the mid-century tour of the all-male Jewel Box Revue, tracing clubs, theatres, and arenas across the U.S. and Canada.<br><br><b>Curated by Victor June Omni</b><br><i>Archival sources: JD Doyle Archives; Queer Music Heritage.</i><br><br><small>Use the arrows or map pins to explore venues.</small>"
+  },
+  "media": {
+    "url": "banner_sepia.png",
+    "caption": "Vintage playbill–style banner"
+  },
+  "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
+},
+
               "text": "Clubs, theatres, and arenas in which the Jewel Box Revue appeared. Exact coordinates where the source named the house; city-level where it did not."
             },
             "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
@@ -556,7 +577,14 @@
           {
             "text": { "headline": "Uncle Sams Motel – Niagara Falls, ON", "text": "8 wks." },
             "location": { "lat": 43.0896, "lon": -79.0849, "zoom": 12 }
-          }
+          },
+{
+  "text": {
+    "headline": "Sources & Acknowledgments",
+    "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>. Map adaptation and interface by <b>Victor June Omni</b>. StoryMapJS by Knight Lab."
+  },
+  "location": { "lat": 29.7604, "lon": -95.3698, "zoom": 3 }
+}
 
         ]
       }
