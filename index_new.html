@@ -5,7 +5,7 @@
   <title>Jewel Box Revue – Venues Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- StoryMapJS library -->
+  <!-- StoryMapJS -->
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
   <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
@@ -13,15 +13,12 @@
     :root {
       --bg: #f7f1e3;
       --text: #3a2e1f;
-      --accent: #d3b28f;
     }
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     html, body {
       height: 100%;
       margin: 0;
-      background-color: var(--bg);
+      background: var(--bg);
       font-family: "Georgia", "Times New Roman", serif;
       color: var(--text);
     }
@@ -41,7 +38,6 @@
       display: flex;
       height: calc(100% - 110px);
     }
-    /* Sidebar for locations */
     #locations {
       width: 320px;
       max-width: 100%;
@@ -52,24 +48,21 @@
     #locations h2 {
       margin: 10px;
       font-size: 1rem;
-      letter-spacing: 0.02em;
     }
     #location-list {
       list-style: none;
       margin: 0;
       padding: 0;
     }
-    #location-list li {
-      border-bottom: 1px solid rgba(58,46,31,0.07);
-    }
+    #location-list li { border-bottom: 1px solid rgba(58,46,31,0.07); }
     #location-list button {
       width: 100%;
       text-align: left;
       background: transparent;
       border: none;
-      padding: 10px 12px;
+      padding: 9px 12px;
       font-family: inherit;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       cursor: pointer;
       display: flex;
       gap: 10px;
@@ -83,55 +76,39 @@
       width: 50px;
       height: 38px;
       background: #ddd;
-      flex: 0 0 50px;
       object-fit: cover;
       border: 1px solid rgba(0,0,0,0.05);
+      flex: 0 0 50px;
     }
-    #map {
-      flex: 1;
-      min-width: 0;
-    }
+    #map { flex: 1; min-width: 0; }
     .storymap-slide-text {
       background-color: rgba(247, 241, 227, 0.92);
       padding: 15px;
       border-radius: 6px;
     }
     @media (max-width: 900px) {
-      .layout {
-        flex-direction: column;
-      }
-      #locations {
-        width: 100%;
-        height: 180px;
-      }
-      #map {
-        height: calc(100% - 180px);
-      }
+      .layout { flex-direction: column; }
+      #locations { width: 100%; height: 180px; }
+      #map { height: calc(100% - 180px); }
     }
   </style>
 </head>
 <body>
   <header>
-    <!-- Banner image: adjust the filename if your banner image has a different name -->
+    <!-- this file exists in your repo -->
     <img src="banner_sepia.png" alt="Jewel Box Revue banner">
   </header>
 
   <div class="layout">
     <aside id="locations">
       <h2>Jewel Box Revue Venues</h2>
-      <ul id="location-list"><!-- list populated by script --></ul>
+      <ul id="location-list"></ul>
     </aside>
     <div id="map"></div>
   </div>
 
   <script>
-    /*
-     * StoryMapJS slide data. This mirrors the structure used in your original
-     * index.html but is embedded here so we can easily build a location list.
-     * Each slide includes a headline, descriptive text, media (image filename)
-     * and a geographic location. Feel free to edit or extend this array as
-     * needed. The banner is defined separately as the first slide (type="overview").
-     */
+    // all the images I saw in the repo on GitHub
     var storymap_data = {
       "storymap": {
         "language": "en",
@@ -148,85 +125,85 @@
             "media": { "url": "banner_sepia.png" },
             "location": { "lat": 39.5, "lon": -95, "zoom": 3 }
           },
-          { "text": { "headline": "Atlanta – Kasbah", "text": "Mid-century booking of the Revue in Atlanta." },
+          { "text": { "headline": "Atlanta – Kasbah", "text": "" },
             "media": { "url": "atlanta-kasbah-jbr-01.jpg" },
             "location": { "lat": 33.749, "lon": -84.388, "zoom": 10 } },
-          { "text": { "headline": "Baltimore – Royal Theatre", "text": "Baltimore’s premier Black vaudeville house; hosted the Revue." },
+          { "text": { "headline": "Baltimore – Royal Theatre", "text": "" },
             "media": { "url": "baltimore-royal-theatre-jbr-01.jpg" },
             "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 } },
-          { "text": { "headline": "Brooklyn – Town & Country", "text": "Ben Maksik’s supper club that featured the Revue in 1960." },
+          { "text": { "headline": "Brooklyn – Town & Country", "text": "" },
             "media": { "url": "brooklyn-town-and-country-jbr-01.jpg" },
             "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 11 } },
-          { "text": { "headline": "Chicago – Robert’s Show Club", "text": "Popular South Side club where crowds saw the Revue." },
+          { "text": { "headline": "Chicago – Robert’s Show Club", "text": "" },
             "media": { "url": "chicago-roberts-show-club-jbr-01.jpg" },
             "location": { "lat": 41.774, "lon": -87.615, "zoom": 12 } },
-          { "text": { "headline": "Cincinnati – Club Diplomat", "text": "Cincinnati engagement of the touring Revue." },
+          { "text": { "headline": "Cincinnati – Club Diplomat", "text": "" },
             "media": { "url": "cincinnati-club-diplomat-jbr-01.jpg" },
             "location": { "lat": 39.1031, "lon": -84.512, "zoom": 11 } },
-          { "text": { "headline": "Dallas – Pappy’s Showland", "text": "Texas stop on the drag revue circuit." },
+          { "text": { "headline": "Dallas – Pappy’s Showland", "text": "" },
             "media": { "url": "dallas-pappys-showland-jbr-01.jpg" },
             "location": { "lat": 32.7767, "lon": -96.797, "zoom": 10 } },
-          { "text": { "headline": "Dearborn – Club Gay Haven", "text": "Detroit-area booking." },
+          { "text": { "headline": "Dearborn – Club Gay Haven", "text": "" },
             "media": { "url": "dearborn-club-gay-haven-jbr-01.jpg" },
             "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 11 } },
-          { "text": { "headline": "Detroit – Flame Club", "text": "Detroit stop for the Revue." },
+          { "text": { "headline": "Detroit – Flame Club", "text": "" },
             "media": { "url": "detroit-flame-club-jbr-01.jpg" },
             "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 } },
-          { "text": { "headline": "Fort Worth – Skyliner", "text": "Texas run." },
+          { "text": { "headline": "Fort Worth – Skyliner", "text": "" },
             "media": { "url": "fort-worth-skyliner-jbr-01.jpg" },
             "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 10 } },
-          { "text": { "headline": "Geneva, NY – Club 86", "text": "Upstate New York engagement." },
+          { "text": { "headline": "Geneva, NY – Club 86", "text": "" },
             "media": { "url": "geneva-club-86-jbr-01.jpg" },
             "location": { "lat": 42.867, "lon": -76.9858, "zoom": 11 } },
-          { "text": { "headline": "Hollywood – El Capitan", "text": "Major West Coast stop." },
+          { "text": { "headline": "Hollywood – El Capitan", "text": "" },
             "media": { "url": "hollywood-el-capitan-jbr-01.jpg" },
             "location": { "lat": 34.1019, "lon": -118.3269, "zoom": 11 } },
-          { "text": { "headline": "Louisville – Stork Club", "text": "Southern/Midwest date." },
+          { "text": { "headline": "Louisville – Stork Club", "text": "" },
             "media": { "url": "louisville-stork-club-jbr-01.jpg" },
             "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 } },
-          { "text": { "headline": "Milwaukee – Club 26", "text": "One of several long Milwaukee runs." },
+          { "text": { "headline": "Milwaukee – Club 26", "text": "" },
             "media": { "url": "milwaukee-club-26-jbr-01.jpg" },
             "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 } },
-          { "text": { "headline": "Milwaukee – Tic Toc Club", "text": "Famous supper club that hosted the Revue." },
+          { "text": { "headline": "Milwaukee – Tic Toc Club", "text": "" },
             "media": { "url": "milwaukee-tic-toc-jbr-01.jpg" },
             "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 } },
-          { "text": { "headline": "Monticello, NY – Playhouse", "text": "Catskills/Upstate booking." },
+          { "text": { "headline": "Monticello, NY – Playhouse", "text": "" },
             "media": { "url": "monticello-playhouse-jbr-01.jpg" },
             "location": { "lat": 41.6534, "lon": -74.696, "zoom": 11 } },
-          { "text": { "headline": "New York – Apollo (1)", "text": "Harlem engagement." },
+          { "text": { "headline": "New York – Apollo (1)", "text": "" },
             "media": { "url": "new-york-apollo-jbr-01.jpg" },
             "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 } },
-          { "text": { "headline": "New York – Apollo (2)", "text": "Silver Anniversary material." },
+          { "text": { "headline": "New York – Apollo (2)", "text": "" },
             "media": { "url": "new-york-apollo-jbr-02.jpg" },
             "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 } },
-          { "text": { "headline": "Newark, NJ – Mosque Theatre", "text": "New Jersey booking." },
+          { "text": { "headline": "Newark, NJ – Mosque Theatre", "text": "" },
             "media": { "url": "newark-mosque-theatre-jbr-01.jpg" },
             "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 12 } },
-          { "text": { "headline": "Oklahoma City – Derby Club", "text": "Southwest booking." },
+          { "text": { "headline": "Oklahoma City – Derby Club", "text": "" },
             "media": { "url": "oklahoma-city-derby-club-jbr-01.jpg" },
             "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 } },
-          { "text": { "headline": "Philadelphia – Uptown Theatre", "text": "Part of the chitlin’ circuit." },
+          { "text": { "headline": "Philadelphia – Uptown Theatre", "text": "" },
             "media": { "url": "philadelphia-uptown-theatre-jbr-01.jpg" },
             "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 12 } },
-          { "text": { "headline": "Reno, NV – Riverside Hotel", "text": "Western engagement." },
+          { "text": { "headline": "Reno, NV – Riverside Hotel", "text": "" },
             "media": { "url": "reno-riverside-hotel-jbr-01.jpg" },
             "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 10 } },
-          { "text": { "headline": "Seattle – Showbox", "text": "Pacific Northwest stop." },
+          { "text": { "headline": "Seattle – Showbox", "text": "" },
             "media": { "url": "seattle-showbox-jbr-01.jpg" },
             "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 } },
-          { "text": { "headline": "Springfield, IL – Capitol Club", "text": "Midwest date." },
+          { "text": { "headline": "Springfield, IL – Capitol Club", "text": "" },
             "media": { "url": "springfield-capitol-club-jbr-01.jpg" },
             "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 11 } },
-          { "text": { "headline": "Syracuse – Three Rivers Inn (1)", "text": "Upstate New York run." },
+          { "text": { "headline": "Syracuse – Three Rivers Inn (1)", "text": "" },
             "media": { "url": "syracuse-three-rivers-inn-jbr-01.jpg" },
             "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
-          { "text": { "headline": "Syracuse – Three Rivers Inn (2)", "text": "Additional material." },
+          { "text": { "headline": "Syracuse – Three Rivers Inn (2)", "text": "" },
             "media": { "url": "syracuse-three-rivers-inn-jbr-02.jpg" },
             "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
-          { "text": { "headline": "Toledo – Club Kasee’s", "text": "Ohio booking." },
+          { "text": { "headline": "Toledo – Club Kasee’s", "text": "" },
             "media": { "url": "toledo-club-kasees-jbr-01.jpg" },
             "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 11 } },
-          { "text": { "headline": "Washington, D.C. – Howard Theatre", "text": "Key D.C. stop in the circuit." },
+          { "text": { "headline": "Washington, D.C. – Howard Theatre", "text": "" },
             "media": { "url": "washington-howard-theatre-jbr-01.jpg" },
             "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 12 } },
           {
@@ -240,27 +217,21 @@
       }
     };
 
-    // Initialize the StoryMap using the embedded data
+    // init StoryMap
     var storymap = new VCO.StoryMap('map', storymap_data, {
       script_path: "https://cdn.knightlab.com/libs/storymapjs/latest/"
     });
 
-    // Build the list of locations in the sidebar
-    (function buildLocationList() {
+    // build sidebar with EVERY slide
+    (function buildLocationList () {
       var listEl = document.getElementById('location-list');
-      if (!listEl || !storymap_data || !storymap_data.storymap || !Array.isArray(storymap_data.storymap.slides)) {
-        return;
-      }
-      storymap_data.storymap.slides.forEach(function(slide, index) {
-        // skip overview and sources slides
-        if (slide.type === 'overview') return;
-        if (slide.text && slide.text.headline && slide.text.headline.toLowerCase().includes('sources')) return;
-        var headline = (slide.text && slide.text.headline) ? slide.text.headline : 'Untitled location';
+      storymap_data.storymap.slides.forEach(function (slide, index) {
+        var headline = (slide.text && slide.text.headline) ? slide.text.headline : 'Untitled';
         var imgSrc = (slide.media && slide.media.url) ? slide.media.url : '';
         var li = document.createElement('li');
         var btn = document.createElement('button');
-        btn.setAttribute('type', 'button');
-        // create thumbnail image
+        btn.type = 'button';
+
         var img = document.createElement('img');
         img.className = 'thumb';
         if (imgSrc) {
@@ -269,27 +240,29 @@
         } else {
           img.style.visibility = 'hidden';
         }
+
         var span = document.createElement('span');
         span.textContent = headline;
+
         btn.appendChild(img);
         btn.appendChild(span);
-        btn.addEventListener('click', function() {
+
+        btn.addEventListener('click', function () {
           if (storymap && typeof storymap.goTo === 'function') {
             storymap.goTo(index);
           }
-          // highlight the active button
-          document.querySelectorAll('#location-list button').forEach(function(b) {
+          document.querySelectorAll('#location-list button').forEach(function (b) {
             b.classList.remove('active');
           });
           btn.classList.add('active');
         });
+
         li.appendChild(btn);
         listEl.appendChild(li);
       });
     })();
 
-    // Keep map responsive to window resizing
-    window.onresize = function() {
+    window.onresize = function () {
       storymap.updateDisplay();
     };
   </script>
