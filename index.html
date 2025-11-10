@@ -22,576 +22,797 @@
   <div id="map"></div>
   <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
   <script>
-    // One slide per venue, based ONLY on the list in your scan + the venues you pasted.
-    // Exact coords used where the source gave a real address (Apollo, Town & Country, Howard, El Capitan, Fox Detroit).
-    // Others = city-level coords because the source did not give a street (we are NOT inventing addresses).
-
-    var storymap_data = {
-      "storymap": {
-        "language": "en",
-        "headline": "Jewel Box Revue – Clubs, Theatres, and Arenas",
-        "text": "Rebuilt from the mid-century tour list; each venue its own pin; decades preserved.",
-        "type": "map",
-        "slides": [
-          {
-            "type": "overview",
-            {
-  "type": "overview",
-  "text": {
-    "headline": "The Jewel Box Revue: A Touring Map (1939–1968)",
-    "text": "An exhibition-style reconstruction of the mid-century tour of the all-male Jewel Box Revue, tracing clubs, theatres, and arenas across the U.S. and Canada.<br><br><b>Curated by Victor June Omni</b><br><i>Archival sources: JD Doyle Archives; Queer Music Heritage.</i><br><br><small>Use the arrows or map pins to explore venues.</small>"
-  },
-  "media": {
-    "url": "banner_sepia.png",
-    "caption": "Vintage playbill–style banner"
-  },
-  "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
-},
-
-              "text": "Clubs, theatres, and arenas in which the Jewel Box Revue appeared. Exact coordinates where the source named the house; city-level where it did not."
-            },
-            "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
-          },
-
-          /* --- MIAMI --- */
-          {
-            "text": { "headline": "Club Jewel Box – Miami, FL", "text": "8 yrs. engagement (origins of the revue), 1939–1940s." },
-            "location": { "lat": 25.75, "lon": -80.24, "zoom": 10 }
-          },
+    <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+<script>
+  var storymap_data = {
+    "storymap": {
+      "language": "en",
+      "headline": "Jewel Box Revue – Clubs, Theatres, and Arenas",
+      "text": "Rebuilt from the mid-century tour list; each venue its own pin; decades preserved.",
+      "type": "map",
+      "slides": [
+        {
+          "type": "overview",
+          "text": {
+            "headline": "The Jewel Box Revue: A Touring Map (1939–1968)",
+            "text": "An exhibition-style reconstruction of the mid-century tour of the all-male Jewel Box Revue, tracing clubs, theatres, and arenas across the U.S. and Canada.<br><br><b>Curated by Victor June Omni</b><br><i>Archival sources: JD Doyle Archives; Queer Music Heritage.</i><br><br><small>Use the arrows or map pins to explore venues.</small>"
+          },
+          "media": {
+            "url": "banner_sepia.png",
+            "caption": "Vintage playbill–style banner"
+          },
+          "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
+        },
+
+        {
+          "text": {
+            "headline": "Club Jewel Box – Miami, FL",
+            "text": "8 yrs. engagement (origins of the revue), 1939–1940s."
+          },
+          "location": { "lat": 25.75, "lon": -80.24, "zoom": 10 }
+        },
+        {
+          "text": {
+            "headline": "Club Balconades – Pittsburgh, PA",
+            "text": "1 yr. engagement, 1940s–1950s."
+          },
+          "location": { "lat": 40.4406, "lon": -79.9959, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Ankara – Pittsburgh, PA",
+            "text": "8 wks., 1940s–1950s."
+          },
+          "location": { "lat": 40.4406, "lon": -79.9959, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Downtown Theatre – Detroit, MI",
+            "text": "4 wks., 1950s."
+          },
+          "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Club 509 – Detroit, MI",
+            "text": "Four 4-wk engagements, 1950s."
+          },
+          "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Fox Theatre – Detroit, MI",
+            "text": "2 wks., 1950s."
+          },
+          "location": { "lat": 42.3386, "lon": -83.0522, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Club Alamo – Detroit, MI",
+            "text": "12 wks., mid-century."
+          },
+          "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Flame Club – Detroit, MI",
+            "text": "Two 4-wk engagements, 1950s."
+          },
+          "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Tic Toc Club – Milwaukee, WI",
+            "text": "3 eight-wk engagements."
+          },
+          "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Club 26 – Milwaukee, WI",
+            "text": "4 wks."
+          },
+          "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Three Rivers – Syracuse, NY",
+            "text": "Three 8-wk engagements."
+          },
+          "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Tic-Toc – Syracuse, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Civic Theatre – Syracuse, NY",
+            "text": "3 wks."
+          },
+          "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Andy's Inn – Syracuse, NY",
+            "text": "6 wks."
+          },
+          "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Lorenzo's – Syracuse, NY",
+            "text": "Duration listed in source; street not listed."
+          },
+          "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Breakers Club – Rochester, NY",
+            "text": "9 wks."
+          },
+          "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Chateau – Rochester, NY",
+            "text": "Two 8-wk engagements."
+          },
+          "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "El Morocco – Rochester, NY",
+            "text": "8 wks."
+          },
+          "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Village Hotel – Erie, PA",
+            "text": "6 wks."
+          },
+          "location": { "lat": 42.1292, "lon": -80.0851, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Riviera Club – Columbus, OH",
+            "text": "12 wks."
+          },
+          "location": { "lat": 39.9612, "lon": -82.9988, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Parson Theatre – Columbus, OH",
+            "text": "4 wks."
+          },
+          "location": { "lat": 39.9612, "lon": -82.9988, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Canada House – Windsor, ON",
+            "text": "8 wks."
+          },
+          "location": { "lat": 42.3149, "lon": -83.0364, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Thomas Edgewater Inn – Windsor, ON",
+            "text": "8 wks."
+          },
+          "location": { "lat": 42.3149, "lon": -83.0364, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Stork Club – Louisville, KY",
+            "text": "12 wks."
+          },
+          "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Paddock Club – Louisville, KY",
+            "text": "8 wks."
+          },
+          "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Villa Dee – Jackson, MI",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.2459, "lon": -84.4013, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Club Skyliner – Fort Worth, TX",
+            "text": "Two 6-wk engagements."
+          },
+          "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Pappys Showland – Dallas, TX",
+            "text": "Two 12-wk engagements."
+          },
+          "location": { "lat": 32.7767, "lon": -96.7970, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Derby Club – Oklahoma City, OK",
+            "text": "Two 10-wk engagements."
+          },
+          "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Luigi's Supper Club – Niagara Falls, NY",
+            "text": "Two 14-wk engagements."
+          },
+          "location": { "lat": 43.0962, "lon": -79.0377, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Tivoli Club – Ciudad Juárez, Mexico",
+            "text": "6 wks."
+          },
+          "location": { "lat": 31.6904, "lon": -106.4245, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Devonian Supper Club – Hobbs, NM",
+            "text": "6 wks."
+          },
+          "location": { "lat": 32.7026, "lon": -103.1360, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Show Box – Seattle, WA",
+            "text": "6 wks."
+          },
+          "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Palomar Club – Vancouver, BC",
+            "text": "9 wks."
+          },
+          "location": { "lat": 49.2827, "lon": -123.1207, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "State Line Gardens – Spokane, WA",
+            "text": "6 wks."
+          },
+          "location": { "lat": 47.6588, "lon": -117.4260, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Gold Front Theatre – Alpena, MI",
+            "text": "1 wk."
+          },
+          "location": { "lat": 45.0617, "lon": -83.4327, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Memorial Hall – Alpena, MI",
+            "text": "Engagement listed in source."
+          },
+          "location": { "lat": 45.0617, "lon": -83.4327, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Westchester Town House – Yonkers, NY",
+            "text": "10 wks."
+          },
+          "location": { "lat": 40.9312, "lon": -73.8988, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Loew’s State Theatre – New York, NY",
+            "text": "3 wks., late 1950s."
+          },
+          "location": { "lat": 40.7562, "lon": -73.9862, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Apollo Theater – Harlem, NY",
+            "text": "7 3-wk engagements, c. 1959–1960s."
+          },
+          "location": { "lat": 40.809994, "lon": -73.949600, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Shore Theatre – Coney Island, Brooklyn, NY",
+            "text": "2 wks., 1950s."
+          },
+          "location": { "lat": 40.5758, "lon": -73.9817, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Town & Country – Brooklyn, NY",
+            "text": "22 wks. and 26 wks., 1960."
+          },
+          "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Hillside Theatre – Jamaica, NY",
+            "text": "Two 8-wk engagements."
+          },
+          "location": { "lat": 40.7027, "lon": -73.7889, "zoom": 13 }
+        },
+
+        {
+          "text": {
+            "headline": "Pink Poodle – Indianapolis, IN",
+            "text": "4 wks."
+          },
+          "location": { "lat": 39.7684, "lon": -86.1581, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Riverside Hotel – Reno, NV",
+            "text": "8 wks."
+          },
+          "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Schubert Theatre – Washington, D.C.",
+            "text": "4 wks."
+          },
+          "location": { "lat": 38.9072, "lon": -77.0369, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Howard Theatre – Washington, D.C.",
+            "text": "Seven 2-wk engagements, 1950s–1960s."
+          },
+          "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Casino Royal – Washington, D.C.",
+            "text": "8 wks."
+          },
+          "location": { "lat": 38.9072, "lon": -77.0369, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Uptown Theatre – Philadelphia, PA",
+            "text": "Three 2-wk engagements, 1950s–1960s."
+          },
+          "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 13 }
+        },
+
+        {
+          "text": {
+            "headline": "University Theatre – Cleveland, OH",
+            "text": "4 wks."
+          },
+          "location": { "lat": 41.4993, "lon": -81.6944, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Circle Theatre – Cleveland, OH",
+            "text": "1 wk."
+          },
+          "location": { "lat": 41.4993, "lon": -81.6944, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Globe Theatre – Atlantic City, NJ",
+            "text": "2-wk engagement."
+          },
+          "location": { "lat": 39.3643, "lon": -74.4229, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Royal Theatre – Baltimore, MD",
+            "text": "2-wk engagement."
+          },
+          "location": { "lat": 39.301188, "lon": -76.631548, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Mardi Gras – Baltimore, MD",
+            "text": "4 wks."
+          },
+          "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "El Capitan Theatre – Hollywood, CA",
+            "text": "18 wks."
+          },
+          "location": { "lat": 34.1019, "lon": -118.3400, "zoom": 13 }
+        },
+
+        {
+          "text": {
+            "headline": "Mosque Theatre (Symphony Hall) – Newark, NJ",
+            "text": "2 wks."
+          },
+          "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "RKO Proctor’s Theatre – Newark, NJ",
+            "text": "1968, unlimited engagement."
+          },
+          "location": { "lat": 40.736, "lon": -74.171, "zoom": 13 }
+        },
+
+        {
+          "text": {
+            "headline": "Hempstead Theatre – Hempstead, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 40.7062, "lon": -73.6187, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Latin Quarter – Albany, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Barones Supper Club – Albany, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Beachcomber – Albany, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Gene’s Inn – Watertown, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 43.9748, "lon": -75.9108, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Monticello Playhouse – Monticello, NY",
+            "text": "18 wks."
+          },
+          "location": { "lat": 41.6534, "lon": -74.6960, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Café Provincial – Montreal, QC",
+            "text": "28 wks."
+          },
+          "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Club El Moroco – Montreal, QC",
+            "text": "4 months."
+          },
+          "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
+        },
+        {
+          "text": {
+            "headline": "Faisan Bleu – Montreal, QC",
+            "text": "Listed in source."
+          },
+          "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Kennedy’s Inn – Binghamton, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.0987, "lon": -75.9123, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Flame Supper Club – Minneapolis, MN",
+            "text": "16 wks."
+          },
+          "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Gay Nineties – Minneapolis, MN",
+            "text": "Two 12-wk engagements."
+          },
+          "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Curley’s Supper Club – Minneapolis, MN",
+            "text": "6 mo."
+          },
+          "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Club 86 – Geneva, NY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 42.8670, "lon": -76.9858, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Capitol Club – Springfield, IL",
+            "text": "6 wks."
+          },
+          "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Roberts Show Club – Chicago, IL",
+            "text": "7 mos. and 6 mos., 1950s."
+          },
+          "location": { "lat": 41.774, "lon": -87.615, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Tivoli Theatre – Chicago, IL",
+            "text": "Four 2-wk engagements."
+          },
+          "location": { "lat": 41.780, "lon": -87.605, "zoom": 13 }
+        },
+        {
+          "text": {
+            "headline": "Regal Theatre – Chicago, IL",
+            "text": "2 wks."
+          },
+          "location": { "lat": 41.809, "lon": -87.616, "zoom": 13 }
+        },
+
+        {
+          "text": {
+            "headline": "Club Diplomat (Kemper Hotel) – Cincinnati, OH",
+            "text": "8 wks."
+          },
+          "location": { "lat": 39.1031, "lon": -84.5120, "zoom": 12 }
+        },
+        {
+          "text": {
+            "headline": "Cat and Fiddle – Cincinnati, OH",
+            "text": "16 wks."
+          },
+          "location": { "lat": 39.1031, "lon": -84.5120, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Kasbah – Atlanta, GA",
+            "text": "8 wks."
+          },
+          "location": { "lat": 33.7490, "lon": -84.3880, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Hollywood Supper Club – Akron, OH",
+            "text": "4 wks."
+          },
+          "location": { "lat": 41.0814, "lon": -81.5190, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Town House – Boise, ID",
+            "text": "4 wks."
+          },
+          "location": { "lat": 43.6150, "lon": -116.2023, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Inferno – Utica, NY",
+            "text": "6 wks. (club name partly cut on scan; not invented here)."
+          },
+          "location": { "lat": 43.1009, "lon": -75.2327, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Club Ka-Sees – Toledo, OH",
+            "text": "8 wks."
+          },
+          "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Club Gay Haven – Dearborn, MI",
+            "text": "Four 8-wk engagements."
+          },
+          "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Shamrock Club – E. St. Louis, IL",
+            "text": "4 wks."
+          },
+          "location": { "lat": 38.6270, "lon": -90.1994, "zoom": 11 }
+        },
+
+        {
+          "text": {
+            "headline": "Winchester Club – Cairo, IL",
+            "text": "4 wks."
+          },
+          "location": { "lat": 37.0053, "lon": -89.1765, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Half-Moon Club – Pueblo, CO",
+            "text": "4 wks."
+          },
+          "location": { "lat": 38.2544, "lon": -104.6091, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Turf Club – Denver, CO",
+            "text": "16 wks."
+          },
+          "location": { "lat": 39.7392, "lon": -104.9903, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Rosedale Club – Greeley, CO",
+            "text": "4 wks."
+          },
+          "location": { "lat": 40.4233, "lon": -104.7091, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "One-Twenty Club – Cheyenne, WY",
+            "text": "4 wks."
+          },
+          "location": { "lat": 41.14, "lon": -104.8202, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Embassy Supper Club – Albuquerque, NM",
+            "text": "6 wks."
+          },
+          "location": { "lat": 35.0844, "lon": -106.6504, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Pryanon Auditorium – Chatham, ON",
+            "text": "Engagement listed in source."
+          },
+          "location": { "lat": 42.4056, "lon": -82.1910, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "London Arena – London, ON",
+            "text": "Arena booking."
+          },
+          "location": { "lat": 42.9849, "lon": -81.2453, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Sudbury Arena – Sudbury, ON",
+            "text": "Arena booking."
+          },
+          "location": { "lat": 46.49, "lon": -80.99, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Memorial Arena – Sault Ste. Marie, ON",
+            "text": "Arena booking."
+          },
+          "location": { "lat": 46.5219, "lon": -84.3461, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Memorial Arena – Espanola, ON",
+            "text": "Arena booking."
+          },
+          "location": { "lat": 46.2566, "lon": -81.7829, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Chadiere – Hull, QC",
+            "text": "4 wks."
+          },
+          "location": { "lat": 45.4294, "lon": -75.7089, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Omhar Supper Club – Scranton, PA",
+            "text": "6 wks."
+          },
+          "location": { "lat": 41.4089, "lon": -75.6624, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Sun Art Theatre – St. Petersburg, FL",
+            "text": "8 wks."
+          },
+          "location": { "lat": 27.7676, "lon": -82.6403, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Uncle Sams Motel – Niagara Falls, ON",
+            "text": "8 wks."
+          },
+          "location": { "lat": 43.0896, "lon": -79.0849, "zoom": 12 }
+        },
+
+        {
+          "text": {
+            "headline": "Sources & Acknowledgments",
+            "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>. Map adaptation and interface by <b>Victor June Omni</b>. StoryMapJS by Knight Lab."
+          },
+          "location": { "lat": 29.7604, "lon": -95.3698, "zoom": 3 }
+        }
+      ]
+    }
+  };
+
+  var storymap = new KLStoryMap.StoryMap('map', storymap_data);
+  window.onresize = function() { storymap.updateDisplay(); };
+</script>
 
-          /* --- PITTSBURGH --- */
-          {
-            "text": { "headline": "Club Balconades – Pittsburgh, PA", "text": "1 yr. engagement, 1940s–1950s." },
-            "location": { "lat": 40.4406, "lon": -79.9959, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Ankara – Pittsburgh, PA", "text": "8 wks., 1940s–1950s." },
-            "location": { "lat": 40.4406, "lon": -79.9959, "zoom": 11 }
-          },
-
-          /* --- DETROIT --- */
-          {
-            "text": { "headline": "Downtown Theatre – Detroit, MI", "text": "4 wks., 1950s." },
-            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Club 509 – Detroit, MI", "text": "Four 4-wk engagements, 1950s." },
-            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Fox Theatre – Detroit, MI", "text": "2 wks., 1950s.", },
-            "location": { "lat": 42.3386, "lon": -83.0522, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Club Alamo – Detroit, MI", "text": "12 wks., mid-century." },
-            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Flame Club – Detroit, MI", "text": "Two 4-wk engagements, 1950s." },
-            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
-          },
-
-          /* --- MILWAUKEE --- */
-          {
-            "text": { "headline": "Tic Toc Club – Milwaukee, WI", "text": "3 eight-wk engagements." },
-            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Club 26 – Milwaukee, WI", "text": "4 wks." },
-            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
-          },
-
-          /* --- SYRACUSE --- */
-          {
-            "text": { "headline": "Three Rivers – Syracuse, NY", "text": "Three 8-wk engagements." },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Tic-Toc – Syracuse, NY", "text": "4 wks." },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Civic Theatre – Syracuse, NY", "text": "3 wks." },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Andy's Inn – Syracuse, NY", "text": "6 wks." },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Lorenzo's – Syracuse, NY", "text": "Duration listed in source; street not listed." },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-
-          /* --- ROCHESTER --- */
-          {
-            "text": { "headline": "Breakers Club – Rochester, NY", "text": "9 wks." },
-            "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Chateau – Rochester, NY", "text": "Two 8-wk engagements." },
-            "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "El Morocco – Rochester, NY", "text": "8 wks." },
-            "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 11 }
-          },
-
-          /* --- ERIE --- */
-          {
-            "text": { "headline": "Village Hotel – Erie, PA", "text": "6 wks." },
-            "location": { "lat": 42.1292, "lon": -80.0851, "zoom": 11 }
-          },
-
-          /* --- COLUMBUS --- */
-          {
-            "text": { "headline": "Riviera Club – Columbus, OH", "text": "12 wks." },
-            "location": { "lat": 39.9612, "lon": -82.9988, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Parson Theatre – Columbus, OH", "text": "4 wks." },
-            "location": { "lat": 39.9612, "lon": -82.9988, "zoom": 11 }
-          },
-
-          /* --- WINDSOR, ON --- */
-          {
-            "text": { "headline": "Canada House – Windsor, ON", "text": "8 wks." },
-            "location": { "lat": 42.3149, "lon": -83.0364, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Thomas Edgewater Inn – Windsor, ON", "text": "8 wks." },
-            "location": { "lat": 42.3149, "lon": -83.0364, "zoom": 11 }
-          },
-
-          /* --- LOUISVILLE --- */
-          {
-            "text": { "headline": "Stork Club – Louisville, KY", "text": "12 wks." },
-            "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Paddock Club – Louisville, KY", "text": "8 wks." },
-            "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 }
-          },
-
-          /* --- JACKSON, MI --- */
-          {
-            "text": { "headline": "Villa Dee – Jackson, MI", "text": "4 wks." },
-            "location": { "lat": 42.2459, "lon": -84.4013, "zoom": 11 }
-          },
-
-          /* --- FORT WORTH --- */
-          {
-            "text": { "headline": "Club Skyliner – Fort Worth, TX", "text": "Two 6-wk engagements." },
-            "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 11 }
-          },
-
-          /* --- DALLAS --- */
-          {
-            "text": { "headline": "Pappys Showland – Dallas, TX", "text": "Two 12-wk engagements." },
-            "location": { "lat": 32.7767, "lon": -96.7970, "zoom": 11 }
-          },
-
-          /* --- OKLAHOMA CITY --- */
-          {
-            "text": { "headline": "Derby Club – Oklahoma City, OK", "text": "Two 10-wk engagements." },
-            "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 }
-          },
-
-          /* --- NIAGARA FALLS, NY --- */
-          {
-            "text": { "headline": "Luigi's Supper Club – Niagara Falls, NY", "text": "Two 14-wk engagements." },
-            "location": { "lat": 43.0962, "lon": -79.0377, "zoom": 11 }
-          },
-
-          /* --- CIUDAD JUÁREZ --- */
-          {
-            "text": { "headline": "Tivoli Club – Ciudad Juárez, Mexico", "text": "6 wks." },
-            "location": { "lat": 31.6904, "lon": -106.4245, "zoom": 11 }
-          },
-
-          /* --- HOBBS, NM --- */
-          {
-            "text": { "headline": "Devonian Supper Club – Hobbs, NM", "text": "6 wks." },
-            "location": { "lat": 32.7026, "lon": -103.1360, "zoom": 11 }
-          },
-
-          /* --- SEATTLE --- */
-          {
-            "text": { "headline": "Show Box – Seattle, WA", "text": "6 wks." },
-            "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 }
-          },
-
-          /* --- VANCOUVER --- */
-          {
-            "text": { "headline": "Palomar Club – Vancouver, BC", "text": "9 wks." },
-            "location": { "lat": 49.2827, "lon": -123.1207, "zoom": 11 }
-          },
-
-          /* --- SPOKANE --- */
-          {
-            "text": { "headline": "State Line Gardens – Spokane, WA", "text": "6 wks." },
-            "location": { "lat": 47.6588, "lon": -117.4260, "zoom": 11 }
-          },
-
-          /* --- ALPENA --- */
-          {
-            "text": { "headline": "Gold Front Theatre – Alpena, MI", "text": "1 wk." },
-            "location": { "lat": 45.0617, "lon": -83.4327, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Memorial Hall – Alpena, MI", "text": "Engagement listed in source." },
-            "location": { "lat": 45.0617, "lon": -83.4327, "zoom": 11 }
-          },
-
-          /* --- YONKERS --- */
-          {
-            "text": { "headline": "Westchester Town House – Yonkers, NY", "text": "10 wks." },
-            "location": { "lat": 40.9312, "lon": -73.8988, "zoom": 11 }
-          },
-
-          /* --- NEW YORK CITY / BROOKLYN / JAMAICA --- */
-          {
-            "text": { "headline": "Loew’s State Theatre – New York, NY", "text": "3 wks., late 1950s." },
-            "location": { "lat": 40.7562, "lon": -73.9862, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Apollo Theater – Harlem, NY", "text": "7 3-wk engagements, c. 1959–1960s." },
-            "location": { "lat": 40.809994, "lon": -73.949600, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Shore Theatre – Coney Island, Brooklyn, NY", "text": "2 wks., 1950s." },
-            "location": { "lat": 40.5758, "lon": -73.9817, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Town & Country – Brooklyn, NY", "text": "22 wks. and 26 wks., 1960.", },
-            "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Hillside Theatre – Jamaica, NY", "text": "Two 8-wk engagements." },
-            "location": { "lat": 40.7027, "lon": -73.7889, "zoom": 13 }
-          },
-
-          /* --- INDIANAPOLIS --- */
-          {
-            "text": { "headline": "Pink Poodle – Indianapolis, IN", "text": "4 wks." },
-            "location": { "lat": 39.7684, "lon": -86.1581, "zoom": 11 }
-          },
-
-          /* --- RENO --- */
-          {
-            "text": { "headline": "Riverside Hotel – Reno, NV", "text": "8 wks." },
-            "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 11 }
-          },
-
-          /* --- WASHINGTON, D.C. --- */
-          {
-            "text": { "headline": "Schubert Theatre – Washington, D.C.", "text": "4 wks." },
-            "location": { "lat": 38.9072, "lon": -77.0369, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Howard Theatre – Washington, D.C.", "text": "Seven 2-wk engagements, 1950s–1960s." },
-            "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Casino Royal – Washington, D.C.", "text": "8 wks." },
-            "location": { "lat": 38.9072, "lon": -77.0369, "zoom": 12 }
-          },
-
-          /* --- PHILADELPHIA --- */
-          {
-            "text": { "headline": "Uptown Theatre – Philadelphia, PA", "text": "Three 2-wk engagements, 1950s–1960s." },
-            "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 13 }
-          },
-
-          /* --- CLEVELAND --- */
-          {
-            "text": { "headline": "University Theatre – Cleveland, OH", "text": "4 wks." },
-            "location": { "lat": 41.4993, "lon": -81.6944, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Circle Theatre – Cleveland, OH", "text": "1 wk." },
-            "location": { "lat": 41.4993, "lon": -81.6944, "zoom": 11 }
-          },
-
-          /* --- ATLANTIC CITY --- */
-          {
-            "text": { "headline": "Globe Theatre – Atlantic City, NJ", "text": "2-wk engagement." },
-            "location": { "lat": 39.3643, "lon": -74.4229, "zoom": 12 }
-          },
-
-          /* --- BALTIMORE --- */
-          {
-            "text": { "headline": "Royal Theatre – Baltimore, MD", "text": "2-wk engagement." },
-            "location": { "lat": 39.301188, "lon": -76.631548, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Mardi Gras – Baltimore, MD", "text": "4 wks." },
-            "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 }
-          },
-
-          /* --- HOLLYWOOD --- */
-          {
-            "text": { "headline": "El Capitan Theatre – Hollywood, CA", "text": "18 wks." },
-            "location": { "lat": 34.1019, "lon": -118.3400, "zoom": 13 }
-          },
-
-          /* --- NEWARK --- */
-          {
-            "text": { "headline": "Mosque Theatre (Symphony Hall) – Newark, NJ", "text": "2 wks." },
-            "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "RKO Proctor’s Theatre – Newark, NJ", "text": "1968, unlimited engagement." },
-            "location": { "lat": 40.736, "lon": -74.171, "zoom": 13 }
-          },
-
-          /* --- HEMPSTEAD --- */
-          {
-            "text": { "headline": "Hempstead Theatre – Hempstead, NY", "text": "4 wks." },
-            "location": { "lat": 40.7062, "lon": -73.6187, "zoom": 12 }
-          },
-
-          /* --- ALBANY --- */
-          {
-            "text": { "headline": "Latin Quarter – Albany, NY", "text": "4 wks." },
-            "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Barones Supper Club – Albany, NY", "text": "4 wks." },
-            "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Beachcomber – Albany, NY", "text": "4 wks." },
-            "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 12 }
-          },
-
-          /* --- WATERTOWN --- */
-          {
-            "text": { "headline": "Gene’s Inn – Watertown, NY", "text": "4 wks." },
-            "location": { "lat": 43.9748, "lon": -75.9108, "zoom": 12 }
-          },
-
-          /* --- MONTICELLO --- */
-          {
-            "text": { "headline": "Monticello Playhouse – Monticello, NY", "text": "18 wks." },
-            "location": { "lat": 41.6534, "lon": -74.6960, "zoom": 12 }
-          },
-
-          /* --- MONTREAL --- */
-          {
-            "text": { "headline": "Café Provincial – Montreal, QC", "text": "28 wks." },
-            "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Club El Moroco – Montreal, QC", "text": "4 months." },
-            "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
-          },
-          {
-            "text": { "headline": "Faisan Bleu – Montreal, QC", "text": "Listed in source." },
-            "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 11 }
-          },
-
-          /* --- BINGHAMTON --- */
-          {
-            "text": { "headline": "Kennedy’s Inn – Binghamton, NY", "text": "4 wks." },
-            "location": { "lat": 42.0987, "lon": -75.9123, "zoom": 12 }
-          },
-
-          /* --- MINNEAPOLIS --- */
-          {
-            "text": { "headline": "Flame Supper Club – Minneapolis, MN", "text": "16 wks." },
-            "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Gay Nineties – Minneapolis, MN", "text": "Two 12-wk engagements." },
-            "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Curley’s Supper Club – Minneapolis, MN", "text": "6 mo." },
-            "location": { "lat": 44.9778, "lon": -93.2650, "zoom": 12 }
-          },
-
-          /* --- GENEVA --- */
-          {
-            "text": { "headline": "Club 86 – Geneva, NY", "text": "4 wks." },
-            "location": { "lat": 42.8670, "lon": -76.9858, "zoom": 12 }
-          },
-
-          /* --- SPRINGFIELD, IL --- */
-          {
-            "text": { "headline": "Capitol Club – Springfield, IL", "text": "6 wks." },
-            "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 12 }
-          },
-
-          /* --- CHICAGO --- */
-          {
-            "text": { "headline": "Roberts Show Club – Chicago, IL", "text": "7 mos. and 6 mos., 1950s.", },
-            "location": { "lat": 41.774, "lon": -87.615, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Tivoli Theatre – Chicago, IL", "text": "Four 2-wk engagements." },
-            "location": { "lat": 41.780, "lon": -87.605, "zoom": 13 }
-          },
-          {
-            "text": { "headline": "Regal Theatre – Chicago, IL", "text": "2 wks." },
-            "location": { "lat": 41.809, "lon": -87.616, "zoom": 13 }
-          },
-
-          /* --- CINCINNATI --- */
-          {
-            "text": { "headline": "Club Diplomat (Kemper Hotel) – Cincinnati, OH", "text": "8 wks." },
-            "location": { "lat": 39.1031, "lon": -84.5120, "zoom": 12 }
-          },
-          {
-            "text": { "headline": "Cat and Fiddle – Cincinnati, OH", "text": "16 wks." },
-            "location": { "lat": 39.1031, "lon": -84.5120, "zoom": 12 }
-          },
-
-          /* --- ATLANTA --- */
-          {
-            "text": { "headline": "Kasbah – Atlanta, GA", "text": "8 wks." },
-            "location": { "lat": 33.7490, "lon": -84.3880, "zoom": 12 }
-          },
-
-          /* --- AKRON --- */
-          {
-            "text": { "headline": "Hollywood Supper Club – Akron, OH", "text": "4 wks." },
-            "location": { "lat": 41.0814, "lon": -81.5190, "zoom": 12 }
-          },
-
-          /* --- BOISE --- */
-          {
-            "text": { "headline": "Town House – Boise, ID", "text": "4 wks." },
-            "location": { "lat": 43.6150, "lon": -116.2023, "zoom": 12 }
-          },
-
-          /* --- UTICA --- */
-          {
-            "text": { "headline": "Inferno – Utica, NY", "text": "6 wks. (club name partly cut on scan; not invented here)." },
-            "location": { "lat": 43.1009, "lon": -75.2327, "zoom": 12 }
-          },
-
-          /* --- TOLEDO --- */
-          {
-            "text": { "headline": "Club Ka-Sees – Toledo, OH", "text": "8 wks." },
-            "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 12 }
-          },
-
-          /* --- DEARBORN --- */
-          {
-            "text": { "headline": "Club Gay Haven – Dearborn, MI", "text": "Four 8-wk engagements." },
-            "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 12 }
-          },
-
-          /* --- E. ST. LOUIS / ST. LOUIS --- */
-          {
-            "text": { "headline": "Shamrock Club – E. St. Louis, IL", "text": "4 wks." },
-            "location": { "lat": 38.6270, "lon": -90.1994, "zoom": 11 }
-          },
-
-          /* --- CAIRO, IL --- */
-          {
-            "text": { "headline": "Winchester Club – Cairo, IL", "text": "4 wks." },
-            "location": { "lat": 37.0053, "lon": -89.1765, "zoom": 12 }
-          },
-
-          /* --- PUEBLO --- */
-          {
-            "text": { "headline": "Half-Moon Club – Pueblo, CO", "text": "4 wks." },
-            "location": { "lat": 38.2544, "lon": -104.6091, "zoom": 12 }
-          },
-
-          /* --- DENVER --- */
-          {
-            "text": { "headline": "Turf Club – Denver, CO", "text": "16 wks." },
-            "location": { "lat": 39.7392, "lon": -104.9903, "zoom": 12 }
-          },
-
-          /* --- GREELEY --- */
-          {
-            "text": { "headline": "Rosedale Club – Greeley, CO", "text": "4 wks." },
-            "location": { "lat": 40.4233, "lon": -104.7091, "zoom": 12 }
-          },
-
-          /* --- CHEYENNE --- */
-          {
-            "text": { "headline": "One-Twenty Club – Cheyenne, WY", "text": "4 wks." },
-            "location": { "lat": 41.14, "lon": -104.8202, "zoom": 12 }
-          },
-
-          /* --- ALBUQUERQUE --- */
-          {
-            "text": { "headline": "Embassy Supper Club – Albuquerque, NM", "text": "6 wks." },
-            "location": { "lat": 35.0844, "lon": -106.6504, "zoom": 12 }
-          },
-
-          /* --- CHATHAM, ON --- */
-          {
-            "text": { "headline": "Pryanon Auditorium – Chatham, ON", "text": "Engagement listed in source." },
-            "location": { "lat": 42.4056, "lon": -82.1910, "zoom": 12 }
-          },
-
-          /* --- LONDON, ON --- */
-          {
-            "text": { "headline": "London Arena – London, ON", "text": "Arena booking." },
-            "location": { "lat": 42.9849, "lon": -81.2453, "zoom": 12 }
-          },
-
-          /* --- SUDBURY, ON --- */
-          {
-            "text": { "headline": "Sudbury Arena – Sudbury, ON", "text": "Arena booking." },
-            "location": { "lat": 46.49, "lon": -80.99, "zoom": 12 }
-          },
-
-          /* --- SAULT STE. MARIE, ON --- */
-          {
-            "text": { "headline": "Memorial Arena – Sault Ste. Marie, ON", "text": "Arena booking." },
-            "location": { "lat": 46.5219, "lon": -84.3461, "zoom": 12 }
-          },
-
-          /* --- ESPANOLA, ON --- */
-          {
-            "text": { "headline": "Memorial Arena – Espanola, ON", "text": "Arena booking." },
-            "location": { "lat": 46.2566, "lon": -81.7829, "zoom": 12 }
-          },
-
-          /* --- HULL, QC --- */
-          {
-            "text": { "headline": "Chadiere – Hull, QC", "text": "4 wks." },
-            "location": { "lat": 45.4294, "lon": -75.7089, "zoom": 12 }
-          },
-
-          /* --- SCRANTON, PA --- */
-          {
-            "text": { "headline": "Omhar Supper Club – Scranton, PA", "text": "6 wks." },
-            "location": { "lat": 41.4089, "lon": -75.6624, "zoom": 12 }
-          },
-
-          /* --- ST. PETERSBURG, FL --- */
-          {
-            "text": { "headline": "Sun Art Theatre – St. Petersburg, FL", "text": "8 wks." },
-            "location": { "lat": 27.7676, "lon": -82.6403, "zoom": 12 }
-          },
-
-          /* --- NIAGARA FALLS, ON --- */
-          {
-            "text": { "headline": "Uncle Sams Motel – Niagara Falls, ON", "text": "8 wks." },
-            "location": { "lat": 43.0896, "lon": -79.0849, "zoom": 12 }
-          },
-{
-  "text": {
-    "headline": "Sources & Acknowledgments",
-    "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>. Map adaptation and interface by <b>Victor June Omni</b>. StoryMapJS by Knight Lab."
-  },
-  "location": { "lat": 29.7604, "lon": -95.3698, "zoom": 3 }
-}
-
-        ]
-      }
-    };
-
-    var storymap = new KLStoryMap.StoryMap('map', storymap_data);
-    window.onresize = function() { storymap.updateDisplay(); };
-  </script>
-</body>
-</html>
