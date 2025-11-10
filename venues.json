@@ -1,0 +1,170 @@
+[
+  {
+    "title": "New York — Apollo Theatre",
+    "lat": 40.8100,
+    "lng": -73.9500,
+    "image": "images/new-york-apollo-jbr-01.jpg",
+    "description": "Apollo Theatre, Harlem NY — multiple 3-week engagements."
+  },
+  {
+    "title": "Brooklyn — Town & Country Club",
+    "lat": 40.6782,
+    "lng": -73.9442,
+    "image": "images/brooklyn-town-and-country-jbr-01.jpg",
+    "description": "Town & Country (Brooklyn) — 22- and 26-week residencies."
+  },
+  {
+    "title": "Detroit — Flame Club",
+    "lat": 42.3314,
+    "lng": -83.0458,
+    "image": "images/detroit-flame-club-jbr-01.jpg",
+    "description": "Flame Club — two 4-week engagements in downtown Detroit."
+  },
+  {
+    "title": "Chicago — Roberts Show Club",
+    "lat": 41.8781,
+    "lng": -87.6298,
+    "image": "images/chicago-roberts-show-club-jbr-01.jpg",
+    "description": "Roberts Show Club — 7-month and 6-month residencies."
+  },
+  {
+    "title": "Milwaukee — Tic Toc Club",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "image": "images/milwaukee-tic-toc-jbr-01.jpg",
+    "description": "Tic Toc Club — three 8-week engagements in Milwaukee."
+  },
+  {
+    "title": "Milwaukee — Club 26",
+    "lat": 43.0389,
+    "lng": -87.9065,
+    "image": "images/milwaukee-club-26-jbr-01.jpg",
+    "description": "Club 26 — companion supper club to the Tic Toc Club."
+  },
+  {
+    "title": "Syracuse — Three Rivers Inn",
+    "lat": 43.0481,
+    "lng": -76.1474,
+    "image": "images/syracuse-three-rivers-inn-jbr-01.jpg",
+    "description": "Three Rivers Inn — three 8-week engagements near Phoenix NY."
+  },
+  {
+    "title": "Seattle — Showbox Theatre",
+    "lat": 47.6062,
+    "lng": -122.3321,
+    "image": "images/seattle-showbox-jbr-01.jpg",
+    "description": "Showbox Theatre — six-week engagement in Seattle WA."
+  },
+  {
+    "title": "Reno — Riverside Hotel",
+    "lat": 39.5296,
+    "lng": -119.8138,
+    "image": "images/reno-riverside-hotel-jbr-01.jpg",
+    "description": "Riverside Hotel — eight-week engagement in Reno NV."
+  },
+  {
+    "title": "Oklahoma City — Derby Club",
+    "lat": 35.4676,
+    "lng": -97.5164,
+    "image": "images/oklahoma-city-derby-club-jbr-01.jpg",
+    "description": "Derby Club — two 10-week engagements in Oklahoma City."
+  },
+  {
+    "title": "Fort Worth — Skyliner Club",
+    "lat": 32.7555,
+    "lng": -97.3308,
+    "image": "images/fort-worth-skyliner-jbr-01.jpg",
+    "description": "Club Skyliner — two 6-week engagements in Fort Worth TX."
+  },
+  {
+    "title": "Dallas — Pappy’s Showland",
+    "lat": 32.7767,
+    "lng": -96.7970,
+    "image": "images/dallas-pappys-showland-jbr-01.jpg",
+    "description": "Pappy’s Showland — two 12-week engagements in Dallas TX."
+  },
+  {
+    "title": "Louisville — Stork Club",
+    "lat": 38.2527,
+    "lng": -85.7585,
+    "image": "images/louisville-stork-club-jbr-01.jpg",
+    "description": "Stork Club — 12-week engagement in Louisville KY."
+  },
+  {
+    "title": "Geneva NY — Club 86",
+    "lat": 42.8670,
+    "lng": -76.9858,
+    "image": "images/geneva-club-86-jbr-01.jpg",
+    "description": "Club 86 — four-week supper-club run in Geneva NY."
+  },
+  {
+    "title": "Toledo OH — Club Ka-Sees",
+    "lat": 41.6528,
+    "lng": -83.5379,
+    "image": "images/toledo-club-kasees-jbr-01.jpg",
+    "description": "Club Ka-Sees — eight-week engagement in Toledo OH."
+  },
+  {
+    "title": "Dearborn MI — Club Gay Haven",
+    "lat": 42.3223,
+    "lng": -83.1763,
+    "image": "images/dearborn-club-gay-haven-jbr-01.jpg",
+    "description": "Club Gay Haven — four 8-week engagements near Detroit."
+  },
+  {
+    "title": "Atlanta GA — Kasbah Club",
+    "lat": 33.7490,
+    "lng": -84.3880,
+    "image": "images/atlanta-kasbah-jbr-01.jpg",
+    "description": "Kasbah Club — eight-week engagement in Atlanta GA."
+  },
+  {
+    "title": "Washington DC — Howard Theatre",
+    "lat": 38.9072,
+    "lng": -77.0369,
+    "image": "images/washington-howard-theatre-jbr-01.jpg",
+    "description": "Howard Theatre — part of a seven-engagement D.C. circuit."
+  },
+  {
+    "title": "Baltimore MD — Royal Theatre",
+    "lat": 39.2904,
+    "lng": -76.6122,
+    "image": "images/baltimore-royal-theatre-jbr-01.jpg",
+    "description": "Royal Theatre — five 2-week engagements on Pennsylvania Ave."
+  },
+  {
+    "title": "Philadelphia PA — Uptown Theatre",
+    "lat": 39.9526,
+    "lng": -75.1652,
+    "image": "images/philadelphia-uptown-theatre-jbr-01.jpg",
+    "description": "Uptown Theatre — three 2-week engagements in Philadelphia PA."
+  },
+  {
+    "title": "Hollywood CA — El Capitan Theatre",
+    "lat": 34.0928,
+    "lng": -118.3287,
+    "image": "images/hollywood-el-capitan-jbr-01.jpg",
+    "description": "El Capitan Theatre — 18-week Hollywood engagement."
+  },
+  {
+    "title": "Newark NJ — Mosque Theatre",
+    "lat": 40.7357,
+    "lng": -74.1724,
+    "image": "images/newark-mosque-theatre-jbr-01.jpg",
+    "description": "Mosque Theatre — 2-week engagement; now Newark Symphony Hall."
+  },
+  {
+    "title": "Springfield IL — Capitol Club",
+    "lat": 39.7817,
+    "lng": -89.6501,
+    "image": "images/springfield-capitol-club-jbr-01.jpg",
+    "description": "Capitol Club — six-week Springfield supper-club booking."
+  },
+  {
+    "title": "Syracuse NY — Three Rivers Inn (Alt Image)",
+    "lat": 43.0481,
+    "lng": -76.1474,
+    "image": "images/syracuse-three-rivers-inn-jbr-02.jpg",
+    "description": "Alternate view of Three Rivers Inn cabaret stage."
+  }
+]
