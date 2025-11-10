@@ -95,7 +95,6 @@
 </head>
 <body>
   <header>
-    <!-- this file exists in your repo -->
     <img src="banner_sepia.png" alt="Jewel Box Revue banner">
   </header>
 
@@ -108,7 +107,7 @@
   </div>
 
   <script>
-    // all the images I saw in the repo on GitHub
+    // match the actual files in the repo
     var storymap_data = {
       "storymap": {
         "language": "en",
@@ -126,10 +125,10 @@
             "location": { "lat": 39.5, "lon": -95, "zoom": 3 }
           },
           { "text": { "headline": "Atlanta – Kasbah", "text": "" },
-            "media": { "url": "atlanta-kasbah-jbr-01.jpg" },
+            "media": { "url": "AtlantaKASBAH.jpg" },
             "location": { "lat": 33.749, "lon": -84.388, "zoom": 10 } },
           { "text": { "headline": "Baltimore – Royal Theatre", "text": "" },
-            "media": { "url": "baltimore-royal-theatre-jbr-01.jpg" },
+            "media": { "url": "baltimore-royal-theatre.jpg" },
             "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 } },
           { "text": { "headline": "Brooklyn – Town & Country", "text": "" },
             "media": { "url": "brooklyn-town-and-country-jbr-01.jpg" },
@@ -138,7 +137,7 @@
             "media": { "url": "chicago-roberts-show-club-jbr-01.jpg" },
             "location": { "lat": 41.774, "lon": -87.615, "zoom": 12 } },
           { "text": { "headline": "Cincinnati – Club Diplomat", "text": "" },
-            "media": { "url": "cincinnati-club-diplomat-jbr-01.jpg" },
+            "media": { "url": "cincinnati-club-diplomat.jpg" },
             "location": { "lat": 39.1031, "lon": -84.512, "zoom": 11 } },
           { "text": { "headline": "Dallas – Pappy’s Showland", "text": "" },
             "media": { "url": "dallas-pappys-showland-jbr-01.jpg" },
@@ -153,7 +152,7 @@
             "media": { "url": "fort-worth-skyliner-jbr-01.jpg" },
             "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 10 } },
           { "text": { "headline": "Geneva, NY – Club 86", "text": "" },
-            "media": { "url": "geneva-club-86-jbr-01.jpg" },
+            "media": { "url": "geneva-club-86.jpg" },
             "location": { "lat": 42.867, "lon": -76.9858, "zoom": 11 } },
           { "text": { "headline": "Hollywood – El Capitan", "text": "" },
             "media": { "url": "hollywood-el-capitan-jbr-01.jpg" },
@@ -168,7 +167,7 @@
             "media": { "url": "milwaukee-tic-toc-jbr-01.jpg" },
             "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 } },
           { "text": { "headline": "Monticello, NY – Playhouse", "text": "" },
-            "media": { "url": "monticello-playhouse-jbr-01.jpg" },
+            "media": { "url": "monticello-playhouse.jpg" },
             "location": { "lat": 41.6534, "lon": -74.696, "zoom": 11 } },
           { "text": { "headline": "New York – Apollo (1)", "text": "" },
             "media": { "url": "new-york-apollo-jbr-01.jpg" },
@@ -177,13 +176,13 @@
             "media": { "url": "new-york-apollo-jbr-02.jpg" },
             "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 } },
           { "text": { "headline": "Newark, NJ – Mosque Theatre", "text": "" },
-            "media": { "url": "newark-mosque-theatre-jbr-01.jpg" },
+            "media": { "url": "newark-mosque-theatre.jpg" },
             "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 12 } },
           { "text": { "headline": "Oklahoma City – Derby Club", "text": "" },
             "media": { "url": "oklahoma-city-derby-club-jbr-01.jpg" },
             "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 } },
           { "text": { "headline": "Philadelphia – Uptown Theatre", "text": "" },
-            "media": { "url": "philadelphia-uptown-theatre-jbr-01.jpg" },
+            "media": { "url": "philadelphia-uptown-theatre.jpg" },
             "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 12 } },
           { "text": { "headline": "Reno, NV – Riverside Hotel", "text": "" },
             "media": { "url": "reno-riverside-hotel-jbr-01.jpg" },
@@ -192,13 +191,10 @@
             "media": { "url": "seattle-showbox-jbr-01.jpg" },
             "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 } },
           { "text": { "headline": "Springfield, IL – Capitol Club", "text": "" },
-            "media": { "url": "springfield-capitol-club-jbr-01.jpg" },
+            "media": { "url": "springfield-capitol-club.jpg" },
             "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 11 } },
-          { "text": { "headline": "Syracuse – Three Rivers Inn (1)", "text": "" },
-            "media": { "url": "syracuse-three-rivers-inn-jbr-01.jpg" },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
-          { "text": { "headline": "Syracuse – Three Rivers Inn (2)", "text": "" },
-            "media": { "url": "syracuse-three-rivers-inn-jbr-02.jpg" },
+          { "text": { "headline": "Syracuse – Three Rivers Inn", "text": "" },
+            "media": { "url": "SyracuseThreeRivers.jpg" },
             "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
           { "text": { "headline": "Toledo – Club Kasee’s", "text": "" },
             "media": { "url": "toledo-club-kasees-jbr-01.jpg" },
@@ -222,12 +218,17 @@
       script_path: "https://cdn.knightlab.com/libs/storymapjs/latest/"
     });
 
-    // build sidebar with EVERY slide
+    // build sidebar
     (function buildLocationList () {
       var listEl = document.getElementById('location-list');
       storymap_data.storymap.slides.forEach(function (slide, index) {
+        // skip overview and sources
+        if (slide.type === 'overview') return;
+        if (slide.text && slide.text.headline && slide.text.headline.toLowerCase().includes('sources')) return;
+
         var headline = (slide.text && slide.text.headline) ? slide.text.headline : 'Untitled';
         var imgSrc = (slide.media && slide.media.url) ? slide.media.url : '';
+
         var li = document.createElement('li');
         var btn = document.createElement('button');
         btn.type = 'button';
