@@ -3,9 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Jewel Box Revue – Venues Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- StoryMapJS + Leaflet -->
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+
   <style>
-    html, body, #map { height: 100%; margin: 0; padding: 0; }
+    html, body, #map {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
     body {
       background-color: #f7f1e3;
       font-family: "Georgia", "Times New Roman", serif;
@@ -21,15 +30,13 @@
 <body>
   <div id="map"></div>
 
-  <!-- load storymap library once -->
-  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
   <script>
     var storymap_data = {
       "storymap": {
         "language": "en",
-        "headline": "Jewel Box Revue – Clubs, Theatres, and Arenas",
-        "text": "Rebuilt from the mid-century tour list; each venue its own pin; decades preserved.",
-        "type": "map",
+        "headline": "The Jewel Box Revue: A Touring Map (1939–1968)",
+        "type": "overview",
+        "text": "An exhibition-style reconstruction of the mid-century tour of the all-male Jewel Box Revue, tracing clubs, theatres, and arenas across the U.S. and Canada.",
         "slides": [
           {
             "type": "overview",
@@ -41,10 +48,205 @@
               "url": "banner_sepia.png",
               "caption": "Vintage playbill–style banner"
             },
-            "location": { "lat": 39.5, "lon": -95.0, "zoom": 3 }
+            "location": {
+              "lat": 39.5,
+              "lon": -95.0,
+              "zoom": 3
+            }
           },
 
+          /* ---- CLUB / VENUE STOPS FROM YOUR LIST ---- */
           {
             "text": {
-              "headline": "Club Jewel Box
+              "headline": "Club Jewel Box, Miami, FL",
+              "text": "Doc Benner and Danny Brown launched the Jewel Box Revue at this Miami nightclub in 1939."
+            },
+            "location": { "lat": 25.75, "lon": -80.24, "zoom": 8 }
+          },
+          {
+            "text": {
+              "headline": "Apollo Theater, New York, NY",
+              "text": "Regular winter engagement at Harlem’s Apollo Theater starting in 1959."
+            },
+            "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 10 }
+          },
+          {
+            "text": {
+              "headline": "Howard Theatre, Washington, D.C.",
+              "text": "Part of the Black performance ‘chitlin’ circuit’ in the 1950s–1960s."
+            },
+            "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 10 }
+          },
+          {
+            "text": {
+              "headline": "Royal Theatre, Baltimore, MD",
+              "text": "Baltimore’s premier Black vaudeville house; hosted the Revue mid-century."
+            },
+            "location": { "lat": 39.301188, "lon": -76.631548, "zoom": 10 }
+          },
+          {
+            "text": {
+              "headline": "Uptown Theatre, Philadelphia, PA",
+              "text": "Another major chitlin’ circuit stop in the 1950s–1960s."
+            },
+            "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 10 }
+          },
+          {
+            "text": {
+              "headline": "Regal Theater, Chicago, IL",
+              "text": "Chicago’s Regal Theater in Bronzeville welcomed the touring Jewel Box Revue."
+            },
+            "location": { "lat": 41.809, "lon": -87.616, "zoom": 10 }
+          },
+          {
+            "text": {
+              "headline": "Robert’s Show Lounge, Chicago, IL",
+              "text": "Popular South Side club (1954–61) where crowds saw the Revue despite cross-dressing bans."
+            },
+            "location": { "lat": 41.774, "lon": -87.615, "zoom": 12 }
+          },
+          {
+            "text": {
+              "headline": "Tivoli Theatre, Chicago, IL",
+              "text": "Hosted the Revue in September 1960."
+            },
+            "location": { "lat": 41.780, "lon": -87.605, "zoom": 12 }
+          },
+          {
+            "text": {
+              "headline": "Town & Country Club, Brooklyn, NY",
+              "text": "Ben Maksik’s supper club that featured the Revue in 1960."
+            },
+            "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "Mosque Theater (Symphony Hall), Newark, NJ",
+              "text": "Newark venue that hosted the Revue in the 1940s–60s."
+            },
+            "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "RKO Proctor’s Theatre, Newark, NJ",
+              "text": "Revue ran an “unlimited engagement” here in 1968."
+            },
+            "location": { "lat": 40.736, "lon": -74.171, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "Fox Theatre, Detroit, MI",
+              "text": "Regular tour stop in the 1950s."
+            },
+            "location": { "lat": 42.3386, "lon": -83.0522, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "Curly’s Theater Cafe, Minneapolis, MN",
+              "text": "Booked the Revue for a six-month run in 1949."
+            },
+            "location": { "lat": 44.978263, "lon": -93.269401, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "Shore Theater, Coney Island, NY",
+              "text": "Coney Island venue where the Revue drew 1950s crowds."
+            },
+            "location": { "lat": 40.5758, "lon": -73.9817, "zoom": 11 }
+          },
+          {
+            "text": {
+              "headline": "Mexico City (tour stop)",
+              "text": "International tour stop in the 1950s."
+            },
+            "location": { "lat": 19.4326, "lon": -99.1332, "zoom": 5 }
+          },
+
+          /* ---- YOUR 68 CITY POINTS (simplified as location-only slides) ---- */
+          { "text": { "headline": "Miami, FL" }, "location": { "lat": 25.7617, "lon": -80.1918, "zoom": 6 } },
+          { "text": { "headline": "Pittsburgh, PA" }, "location": { "lat": 40.4406, "lon": -79.9959, "zoom": 6 } },
+          { "text": { "headline": "Detroit, MI" }, "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 6 } },
+          { "text": { "headline": "Milwaukee, WI" }, "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 6 } },
+          { "text": { "headline": "Syracuse, NY" }, "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 6 } },
+          { "text": { "headline": "Rochester, NY" }, "location": { "lat": 43.1566, "lon": -77.6088, "zoom": 6 } },
+          { "text": { "headline": "Erie, PA" }, "location": { "lat": 42.1292, "lon": -80.0851, "zoom": 6 } },
+          { "text": { "headline": "Columbus, OH" }, "location": { "lat": 39.9612, "lon": -82.9988, "zoom": 6 } },
+          { "text": { "headline": "Windsor, ON" }, "location": { "lat": 42.3149, "lon": -83.0364, "zoom": 6 } },
+          { "text": { "headline": "Louisville, KY" }, "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 6 } },
+          { "text": { "headline": "Jackson, MI" }, "location": { "lat": 42.2459, "lon": -84.4013, "zoom": 6 } },
+          { "text": { "headline": "Fort Worth, TX" }, "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 6 } },
+          { "text": { "headline": "Dallas, TX" }, "location": { "lat": 32.7767, "lon": -96.797, "zoom": 6 } },
+          { "text": { "headline": "Oklahoma City, OK" }, "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 6 } },
+          { "text": { "headline": "Niagara Falls, NY" }, "location": { "lat": 43.0962, "lon": -79.0377, "zoom": 6 } },
+          { "text": { "headline": "Ciudad Juárez, Mexico" }, "location": { "lat": 31.6904, "lon": -106.4245, "zoom": 6 } },
+          { "text": { "headline": "Hobbs, NM" }, "location": { "lat": 32.7026, "lon": -103.136, "zoom": 6 } },
+          { "text": { "headline": "Seattle, WA" }, "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 6 } },
+          { "text": { "headline": "Vancouver, BC" }, "location": { "lat": 49.2827, "lon": -123.1207, "zoom": 6 } },
+          { "text": { "headline": "Spokane, WA" }, "location": { "lat": 47.6588, "lon": -117.426, "zoom": 6 } },
+          { "text": { "headline": "Alpena, MI" }, "location": { "lat": 45.0617, "lon": -83.4327, "zoom": 6 } },
+          { "text": { "headline": "Yonkers, NY" }, "location": { "lat": 40.9312, "lon": -73.8988, "zoom": 6 } },
+          { "text": { "headline": "New York, NY" }, "location": { "lat": 40.7128, "lon": -74.006, "zoom": 6 } },
+          { "text": { "headline": "Indianapolis, IN" }, "location": { "lat": 39.7684, "lon": -86.1581, "zoom": 6 } },
+          { "text": { "headline": "Reno, NV" }, "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 6 } },
+          { "text": { "headline": "Washington, D.C." }, "location": { "lat": 38.9072, "lon": -77.0369, "zoom": 6 } },
+          { "text": { "headline": "Philadelphia, PA" }, "location": { "lat": 39.9526, "lon": -75.1652, "zoom": 6 } },
+          { "text": { "headline": "Cleveland, OH" }, "location": { "lat": 41.4993, "lon": -81.6944, "zoom": 6 } },
+          { "text": { "headline": "Atlantic City, NJ" }, "location": { "lat": 39.3643, "lon": -74.4229, "zoom": 6 } },
+          { "text": { "headline": "Baltimore, MD" }, "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 6 } },
+          { "text": { "headline": "Hollywood, CA" }, "location": { "lat": 34.0928, "lon": -118.3287, "zoom": 6 } },
+          { "text": { "headline": "Newark, NJ" }, "location": { "lat": 40.7357, "lon": -74.1724, "zoom": 6 } },
+          { "text": { "headline": "Hempstead, NY" }, "location": { "lat": 40.7062, "lon": -73.6187, "zoom": 6 } },
+          { "text": { "headline": "Albany, NY" }, "location": { "lat": 42.6526, "lon": -73.7562, "zoom": 6 } },
+          { "text": { "headline": "Watertown, NY" }, "location": { "lat": 43.9748, "lon": -75.9108, "zoom": 6 } },
+          { "text": { "headline": "Monticello, NY" }, "location": { "lat": 41.6534, "lon": -74.696, "zoom": 6 } },
+          { "text": { "headline": "Montreal, QC" }, "location": { "lat": 45.5019, "lon": -73.5674, "zoom": 6 } },
+          { "text": { "headline": "Binghamton, NY" }, "location": { "lat": 42.0987, "lon": -75.9123, "zoom": 6 } },
+          { "text": { "headline": "Minneapolis, MN" }, "location": { "lat": 44.9778, "lon": -93.265, "zoom": 6 } },
+          { "text": { "headline": "Geneva, NY" }, "location": { "lat": 42.867, "lon": -76.9858, "zoom": 6 } },
+          { "text": { "headline": "Springfield, IL" }, "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 6 } },
+          { "text": { "headline": "Chicago, IL" }, "location": { "lat": 41.8781, "lon": -87.6298, "zoom": 6 } },
+          { "text": { "headline": "Cincinnati, OH" }, "location": { "lat": 39.1031, "lon": -84.512, "zoom": 6 } },
+          { "text": { "headline": "Atlanta, GA" }, "location": { "lat": 33.749, "lon": -84.388, "zoom": 6 } },
+          { "text": { "headline": "Akron, OH" }, "location": { "lat": 41.0814, "lon": -81.519, "zoom": 6 } },
+          { "text": { "headline": "Boise, ID" }, "location": { "lat": 43.615, "lon": -116.2023, "zoom": 6 } },
+          { "text": { "headline": "Utica, NY" }, "location": { "lat": 43.1009, "lon": -75.2327, "zoom": 6 } },
+          { "text": { "headline": "Toledo, OH" }, "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 6 } },
+          { "text": { "headline": "Dearborn, MI" }, "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 6 } },
+          { "text": { "headline": "St. Louis, MO" }, "location": { "lat": 38.627, "lon": -90.1994, "zoom": 6 } },
+          { "text": { "headline": "Cairo, IL" }, "location": { "lat": 37.0053, "lon": -89.1765, "zoom": 6 } },
+          { "text": { "headline": "Pueblo, CO" }, "location": { "lat": 38.2544, "lon": -104.6091, "zoom": 6 } },
+          { "text": { "headline": "Denver, CO" }, "location": { "lat": 39.7392, "lon": -104.9903, "zoom": 6 } },
+          { "text": { "headline": "Greeley, CO" }, "location": { "lat": 40.4233, "lon": -104.7091, "zoom": 6 } },
+          { "text": { "headline": "Cheyenne, WY" }, "location": { "lat": 41.14, "lon": -104.8202, "zoom": 6 } },
+          { "text": { "headline": "Albuquerque, NM" }, "location": { "lat": 35.0844, "lon": -106.6504, "zoom": 6 } },
+          { "text": { "headline": "Chatham, ON" }, "location": { "lat": 42.4056, "lon": -82.191, "zoom": 6 } },
+          { "text": { "headline": "London, ON" }, "location": { "lat": 42.9849, "lon": -81.2453, "zoom": 6 } },
+          { "text": { "headline": "Sudbury, ON" }, "location": { "lat": 46.49, "lon": -80.99, "zoom": 6 } },
+          { "text": { "headline": "Sault Ste. Marie, ON" }, "location": { "lat": 46.5219, "lon": -84.3461, "zoom": 6 } },
+          { "text": { "headline": "Espanola, ON" }, "location": { "lat": 46.2566, "lon": -81.7829, "zoom": 6 } },
+          { "text": { "headline": "Hull, QC" }, "location": { "lat": 45.4294, "lon": -75.7089, "zoom": 6 } },
+          { "text": { "headline": "Scranton, PA" }, "location": { "lat": 41.4089, "lon": -75.6624, "zoom": 6 } },
+          { "text": { "headline": "St. Petersburg, FL" }, "location": { "lat": 27.7676, "lon": -82.6403, "zoom": 6 } },
+          { "text": { "headline": "Niagara Falls, ON" }, "location": { "lat": 43.0896, "lon": -79.0849, "zoom": 6 } },
+
+          /* ---- CREDIT SLIDE ---- */
+          {
+            "text": {
+              "headline": "Sources & Acknowledgments",
+              "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>. Map adaptation and interface by <b>Victor June Omni</b>. StoryMapJS by Knight Lab."
+            },
+            "location": { "lat": 29.7604, "lon": -95.3698, "zoom": 4 }
+          }
+        ]
+      }
+    };
+
+    var storymap = new VCO.StoryMap('map', storymap_data, { script_path: "https://cdn.knightlab.com/libs/storymapjs/latest/" });
+    window.onresize = function() {
+      storymap.updateDisplay();
+    };
+  </script>
+</body>
+</html>
+
 
