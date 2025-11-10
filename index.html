@@ -5,7 +5,6 @@
   <title>Jewel Box Revue – Venues Map</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- StoryMapJS -->
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
   <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
 
@@ -31,13 +30,12 @@
   <div id="map"></div>
 
   <script>
-    // we hard-wire the slides to the files you actually have in the repo
     var storymap_data = {
       "storymap": {
         "language": "en",
         "headline": "The Jewel Box Revue: A Touring Map (1939–1968)",
         "type": "overview",
-        "text": "Venues reconstructed from JD Doyle / Queer Music Heritage materials.",
+        "text": "Venues reconstructed from JD Doyle / Queer Music Heritage.",
         "slides": [
           {
             "type": "overview",
@@ -48,234 +46,121 @@
             "media": {
               "url": "banner_sepia.png"
             },
-            "location": {
-              "lat": 39.5,
-              "lon": -95.0,
-              "zoom": 3
-            }
+            "location": { "lat": 39.5, "lon": -95, "zoom": 3 }
           },
 
-          {
-            "text": {
-              "headline": "Atlanta – Kasbah",
-              "text": "Mid-century booking of the Revue in Atlanta."
-            },
+          { "text": { "headline": "Atlanta – Kasbah", "text": "Mid-century booking of the Revue in Atlanta." },
             "media": { "url": "atlanta-kasbah-jbr-01.jpg" },
-            "location": { "lat": 33.749, "lon": -84.388, "zoom": 10 }
-          },
-          {
-            "text": {
-              "headline": "Baltimore – Royal Theatre",
-              "text": "Baltimore’s premier Black vaudeville house; hosted the Revue."
-            },
+            "location": { "lat": 33.749, "lon": -84.388, "zoom": 10 } },
+
+          { "text": { "headline": "Baltimore – Royal Theatre", "text": "Baltimore’s premier Black vaudeville house; hosted the Revue." },
             "media": { "url": "baltimore-royal-theatre-jbr-01.jpg" },
-            "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Brooklyn – Town & Country",
-              "text": "Ben Maksik’s supper club that featured the Revue in 1960."
-            },
+            "location": { "lat": 39.2904, "lon": -76.6122, "zoom": 11 } },
+
+          { "text": { "headline": "Brooklyn – Town & Country", "text": "Ben Maksik’s supper club that featured the Revue in 1960." },
             "media": { "url": "brooklyn-town-and-country-jbr-01.jpg" },
-            "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Chicago – Robert’s Show Club",
-              "text": "Popular South Side club where crowds saw the Revue."
-            },
+            "location": { "lat": 40.608768, "lon": -73.921155, "zoom": 11 } },
+
+          { "text": { "headline": "Chicago – Robert’s Show Club", "text": "Popular South Side club where crowds saw the Revue." },
             "media": { "url": "chicago-roberts-show-club-jbr-01.jpg" },
-            "location": { "lat": 41.774, "lon": -87.615, "zoom": 12 }
-          },
-          {
-            "text": {
-              "headline": "Cincinnati – Club Diplomat",
-              "text": "Cincinnati engagement of the touring Revue."
-            },
+            "location": { "lat": 41.774, "lon": -87.615, "zoom": 12 } },
+
+          { "text": { "headline": "Cincinnati – Club Diplomat", "text": "Cincinnati engagement of the touring Revue." },
             "media": { "url": "cincinnati-club-diplomat-jbr-01.jpg" },
-            "location": { "lat": 39.1031, "lon": -84.512, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Dallas – Pappy’s Showland",
-              "text": "Texas stop on the drag revue circuit."
-            },
+            "location": { "lat": 39.1031, "lon": -84.512, "zoom": 11 } },
+
+          { "text": { "headline": "Dallas – Pappy’s Showland", "text": "Texas stop on the drag revue circuit." },
             "media": { "url": "dallas-pappys-showland-jbr-01.jpg" },
-            "location": { "lat": 32.7767, "lon": -96.797, "zoom": 10 }
-          },
-          {
-            "text": {
-              "headline": "Dearborn – Club Gay Haven",
-              "text": "Detroit-area booking."
-            },
+            "location": { "lat": 32.7767, "lon": -96.797, "zoom": 10 } },
+
+          { "text": { "headline": "Dearborn – Club Gay Haven", "text": "Detroit-area booking." },
             "media": { "url": "dearborn-club-gay-haven-jbr-01.jpg" },
-            "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Detroit – Flame Club",
-              "text": "Detroit stop for the Revue."
-            },
+            "location": { "lat": 42.3223, "lon": -83.1763, "zoom": 11 } },
+
+          { "text": { "headline": "Detroit – Flame Club", "text": "Detroit stop for the Revue." },
             "media": { "url": "detroit-flame-club-jbr-01.jpg" },
-            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Fort Worth – Skyliner",
-              "text": "Texas run."
-            },
+            "location": { "lat": 42.3314, "lon": -83.0458, "zoom": 11 } },
+
+          { "text": { "headline": "Fort Worth – Skyliner", "text": "Texas run." },
             "media": { "url": "fort-worth-skyliner-jbr-01.jpg" },
-            "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 10 }
-          },
-          {
-            "text": {
-              "headline": "Geneva, NY – Club 86",
-              "text": "Upstate New York engagement."
-            },
+            "location": { "lat": 32.7555, "lon": -97.3308, "zoom": 10 } },
+
+          { "text": { "headline": "Geneva, NY – Club 86", "text": "Upstate New York engagement." },
             "media": { "url": "geneva-club-86-jbr-01.jpg" },
-            "location": { "lat": 42.867, "lon": -76.9858, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Hollywood – El Capitan",
-              "text": "Major West Coast stop."
-            },
+            "location": { "lat": 42.867, "lon": -76.9858, "zoom": 11 } },
+
+          { "text": { "headline": "Hollywood – El Capitan", "text": "Major West Coast stop." },
             "media": { "url": "hollywood-el-capitan-jbr-01.jpg" },
-            "location": { "lat": 34.1019, "lon": -118.3269, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Louisville – Stork Club",
-              "text": "Southern/Midwest date."
-            },
+            "location": { "lat": 34.1019, "lon": -118.3269, "zoom": 11 } },
+
+          { "text": { "headline": "Louisville – Stork Club", "text": "Southern/Midwest date." },
             "media": { "url": "louisville-stork-club-jbr-01.jpg" },
-            "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Milwaukee – Club 26",
-              "text": "One of several long Milwaukee runs."
-            },
+            "location": { "lat": 38.2527, "lon": -85.7585, "zoom": 11 } },
+
+          { "text": { "headline": "Milwaukee – Club 26", "text": "One of several long Milwaukee runs." },
             "media": { "url": "milwaukee-club-26-jbr-01.jpg" },
-            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Milwaukee – Tic Toc Club",
-              "text": "Famous supper club that hosted the Revue."
-            },
+            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 } },
+
+          { "text": { "headline": "Milwaukee – Tic Toc Club", "text": "Famous supper club that hosted the Revue." },
             "media": { "url": "milwaukee-tic-toc-jbr-01.jpg" },
-            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Monticello, NY – Playhouse",
-              "text": "Catskills/Upstate booking."
-            },
+            "location": { "lat": 43.0389, "lon": -87.9065, "zoom": 11 } },
+
+          { "text": { "headline": "Monticello, NY – Playhouse", "text": "Catskills/Upstate booking." },
             "media": { "url": "monticello-playhouse-jbr-01.jpg" },
-            "location": { "lat": 41.6534, "lon": -74.696, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "New York – Apollo Theatre (1)",
-              "text": "Harlem engagement."
-            },
+            "location": { "lat": 41.6534, "lon": -74.696, "zoom": 11 } },
+
+          { "text": { "headline": "New York – Apollo (1)", "text": "Harlem engagement." },
             "media": { "url": "new-york-apollo-jbr-01.jpg" },
-            "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 }
-          },
-          {
-            "text": {
-              "headline": "New York – Apollo Theatre (2)",
-              "text": "Silver Anniversary Finale material."
-            },
+            "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 } },
+
+          { "text": { "headline": "New York – Apollo (2)", "text": "Silver Anniversary material." },
             "media": { "url": "new-york-apollo-jbr-02.jpg" },
-            "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 }
-          },
-          {
-            "text": {
-              "headline": "Newark, NJ – Mosque Theatre",
-              "text": "New Jersey booking."
-            },
+            "location": { "lat": 40.809994, "lon": -73.9496, "zoom": 12 } },
+
+          { "text": { "headline": "Newark, NJ – Mosque Theatre", "text": "New Jersey booking." },
             "media": { "url": "newark-mosque-theatre-jbr-01.jpg" },
-            "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 12 }
-          },
-          {
-            "text": {
-              "headline": "Oklahoma City – Derby Club",
-              "text": "Southwest booking."
-            },
+            "location": { "lat": 40.72778, "lon": -74.17639, "zoom": 12 } },
+
+          { "text": { "headline": "Oklahoma City – Derby Club", "text": "Southwest booking." },
             "media": { "url": "oklahoma-city-derby-club-jbr-01.jpg" },
-            "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Philadelphia – Uptown Theatre",
-              "text": "Part of the chitlin’ circuit."
-            },
+            "location": { "lat": 35.4676, "lon": -97.5164, "zoom": 11 } },
+
+          { "text": { "headline": "Philadelphia – Uptown Theatre", "text": "Part of the chitlin’ circuit." },
             "media": { "url": "philadelphia-uptown-theatre-jbr-01.jpg" },
-            "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 12 }
-          },
-          {
-            "text": {
-              "headline": "Reno, NV – Riverside Hotel",
-              "text": "Western engagement."
-            },
+            "location": { "lat": 39.98722, "lon": -75.15639, "zoom": 12 } },
+
+          { "text": { "headline": "Reno, NV – Riverside Hotel", "text": "Western engagement." },
             "media": { "url": "reno-riverside-hotel-jbr-01.jpg" },
-            "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 10 }
-          },
-          {
-            "text": {
-              "headline": "Seattle – Showbox",
-              "text": "Pacific Northwest stop."
-            },
+            "location": { "lat": 39.5296, "lon": -119.8138, "zoom": 10 } },
+
+          { "text": { "headline": "Seattle – Showbox", "text": "Pacific Northwest stop." },
             "media": { "url": "seattle-showbox-jbr-01.jpg" },
-            "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Springfield, IL – Capitol Club",
-              "text": "Midwest date."
-            },
+            "location": { "lat": 47.6062, "lon": -122.3321, "zoom": 11 } },
+
+          { "text": { "headline": "Springfield, IL – Capitol Club", "text": "Midwest date." },
             "media": { "url": "springfield-capitol-club-jbr-01.jpg" },
-            "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Syracuse – Three Rivers Inn (1)",
-              "text": "Upstate New York run."
-            },
+            "location": { "lat": 39.7817, "lon": -89.6501, "zoom": 11 } },
+
+          { "text": { "headline": "Syracuse – Three Rivers Inn (1)", "text": "Upstate New York run." },
             "media": { "url": "syracuse-three-rivers-inn-jbr-01.jpg" },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Syracuse – Three Rivers Inn (2)",
-              "text": "Additional material from the same venue."
-            },
+            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
+
+          { "text": { "headline": "Syracuse – Three Rivers Inn (2)", "text": "Additional material." },
             "media": { "url": "syracuse-three-rivers-inn-jbr-02.jpg" },
-            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Toledo – Club Kasee’s",
-              "text": "Ohio booking."
-            },
+            "location": { "lat": 43.0481, "lon": -76.1474, "zoom": 11 } },
+
+          { "text": { "headline": "Toledo – Club Kasee’s", "text": "Ohio booking." },
             "media": { "url": "toledo-club-kasees-jbr-01.jpg" },
-            "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 11 }
-          },
-          {
-            "text": {
-              "headline": "Washington, D.C. – Howard Theatre",
-              "text": "Key D.C. stop in the circuit."
-            },
+            "location": { "lat": 41.6528, "lon": -83.5379, "zoom": 11 } },
+
+          { "text": { "headline": "Washington, D.C. – Howard Theatre", "text": "Key D.C. stop in the circuit." },
             "media": { "url": "washington-howard-theatre-jbr-01.jpg" },
-            "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 12 }
-          },
+            "location": { "lat": 38.9153, "lon": -77.0211, "zoom": 12 } },
 
           {
             "text": {
               "headline": "Sources & Acknowledgments",
-              "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>. Map adaptation and interface by <b>Victor June Omni</b>."
+              "text": "Venue list and tour chronology derived from archival materials preserved and shared by <b>JD Doyle Archives</b> and <b>Queer Music Heritage</b>."
             },
             "location": { "lat": 29.7604, "lon": -95.3698, "zoom": 4 }
           }
@@ -293,3 +178,4 @@
   </script>
 </body>
 </html>
+
